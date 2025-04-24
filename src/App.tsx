@@ -1,4 +1,5 @@
 import { useCountStore } from "./store/countStore";
+import { Button } from "./components/ui/button";
 
 function App() {
   const count = useCountStore((state) => state.count);
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={increment}>count is {count} !</button>
+      <Button onClick={increment}>count is {count} !</Button>
     </div>
   );
 }
